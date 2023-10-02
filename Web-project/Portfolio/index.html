@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" sizes="45x25" href="https://th.bing.com/th/id/OIP.R4rk4QMqkFQP1MdBr6XtgQHaHa?pid=ImgDet&rs=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    
+</head>
+</head>
+<body>
+    
+    <script src="script.js"></script>
+    <script>
+        var sakura = new Sakura('body', {
+            fallSpeed: 0.5,
+          maxSize: 25,
+          minSize: 10,
+          colors: [
+            {
+              gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+              gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+              gradientColorDegree: 120,
+            },
+            {
+              gradientColorStart: 'rgba(255,189,189)',
+              gradientColorEnd: 'rgba(227,170,181)',
+              gradientColorDegree: 120,
+            },
+            {
+              gradientColorStart: 'rgba(212,152,163)',
+              gradientColorEnd: 'rgba(242,185,196)',
+              gradientColorDegree: 120,
+            },
+          ],
+          delay: 400,
+        });
+      </script>
+    <div class="Landing-bg">
+        <a target="_blank" href="https://youtu.be/dQw4w9WgXcQ?si=NKlrJLHdUPnrKQLU">
+            <img src="https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.6435-9/52776046_582125505619617_3330340499134349312_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeF24taLrWuzjt6WXf-1eXOvr_avf4bxHkev9q9_hvEeRzuf8Vp3EuUfTxBdH5awjs0gRFx3jJrHOq7Eqh1Iigh8&_nc_ohc=9Kq7sPk1sM4AX_xtR15&_nc_ht=scontent.fbkk2-3.fna&oh=00_AfB4fHiFTGbjCz5ie1kTnIQR9xOicQBSz6M6foT0zhbtcw&oe=653F5A7E">
+        </a>
+        <p>Pun#5466</p>
+    </div>
+
+    <div class="ML">
+            <button type="button" id="myButton" onclick="init()">Click to check who you are!</button>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+            <div class = "content" >
+                <img src="https://d3uyj2gj5wa63n.cloudfront.net/wp-content/uploads/2021/07/teachable_machine_logo.png">
+                <p>
+                    This is a machine learning model that has been trained to classify who you are. I used Teachable Machine for this training. 
+                    Please don't serious if you are dog, it's my intention.
+                </p>
+            </div>
+    </div>
+    <div class="center">
+            <div class="Navbar">
+                    <ol>
+                        <il id="icon"><a href="#" ><i class="fa-solid fa-house"><il id = "text">Home</il></i></a></il>
+                        <il id="icon"><a href="#Aboutme"><i class="fa-solid fa-circle-user"><il id = "text">About me</il></i></a></il>
+                        <il id="icon"><a href="#Education"><i class="fa-solid fa-book"><il id = "text">Education</il></i></a></il>
+                        <il id="icon"><a href="#Skill"><i class="fa-solid fa-code"><il id = "text">Skill</il></i></a></il>
+                        <il id="icon"><a href="#Contact"><i class="fa-regular fa-paper-plane"><il id = "text">Contact</il></i></a></il>
+                        <il id="icon"><a href="https://youtu.be/WSWrIsDp65Y?si=7ns1DQs33lV5HkEl" target="_blank"><i class="fa-solid fa-gift"></i><il id = "text">Gift for TA!</il></i></a></il>
+                    </ol>
+            </div>
+    </div>
+
+    <div class="bg">
+        <h3 id="Aboutme" class="bullet-head"><i class="fa-solid fa-circle-user"></i>About Me</h3>
+        <div class = "bullet-content">
+            <img id = "profile" src="https://cdn.discordapp.com/attachments/1112748331555369072/1157676079889256610/fotor-ai-20230930205020.jpg?ex=6519795e&is=651827de&hm=3f3a658e43fc19633bd12aac586aec9f7ea872b7ae283d6c852ef3094efe578c&">
+            <div class = "datapro">
+                
+                <h3><i class="fa-solid fa-music"></i>Name:  Punnawat Mungakalarungsi</h3>
+                <audio id="audioPlayer" src="your_song.mp3"></audio>
+                <p>Nickmane: Pun</p>
+                <p>Age: 18 years</p>
+                <p>Birthday : 30/12/2004 </p>
+                <p>Address: 53/11 Phaholyothin Road, 54/1 Intersection 4,   Sai Mai Subdistrict, Sai Mai District, Bangkok</p>
+                <center>
+                    <iframe style="border: radius 10px;" src="https://open.spotify.com/embed/track/3y7wWYnla4CN0dhqUkvLER?utm_source=generator" width="90%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </center>
+            </div>
+        </div>
+        
+        <h3 id="Education" class="bullet-head"><i class="fa-solid fa-book"></i>Education</h3>
+        
+        <div class="Landing-bg2">
+            <div class="bullet-content2">
+                <div class = "bullet-content">
+                    <div id="Ed-name">
+                        <img id = "school-img" src="https://th.bing.com/th/id/R.0cd60ee560e92fa67ae7123c6976ee6c?rik=kqBfEDF0lC%2bdkA&riu=http%3a%2f%2fchokchai.ac.th%2fwp-content%2fuploads%2f2016%2f11%2fUntitled-1.png&ehk=5jU0Ouj5PuJTJTlfcZ1yBgbbeJnbTDFMiLo8r%2bo3VRA%3d&risl=&pid=ImgRaw&r=0">
+                        <p><b>Primary School :</b></p> 
+                        <p>Chokchai Lardprod School</p>
+                    </div>
+                    <div id="Ed-name">
+                        <img id = "school-img" src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/60b37bd99754780001315c53/picture">
+                        <p><b>Secondary School :</b></p> 
+                        <p>Thamasart Secondary School</p>
+                    </div>
+                </div>
+                
+                <div class = "bullet-content">
+                    <div id= "Ed-name">
+                        <img id = "school-img" src="https://scontent.fbkk2-8.fna.fbcdn.net/v/t39.30808-6/301695555_569125151669949_5475860926310114161_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeGwhWn3CLUrgHewVYvWYowPkLIFrIhU5DSQsgWsiFTkNAi2Dzmr__ooIyDjOBSRK2mFD6b1OcBtK0H4BlBrV16q&_nc_ohc=R1bt99TSSwwAX93zblQ&_nc_ht=scontent.fbkk2-8.fna&oh=00_AfBAqgarYJwyMiL13mRmWfPnei5WM7ImHpSqM61YmCHGCA&oe=651DFA01">
+                        <p><b>High School :</b></p> 
+                        <p>Sarasas Witaed Saimai School</p>
+                    </div>
+                    <div id = "Ed-name">
+                        <img id = "school-img" src="https://th.bing.com/th/id/R.b7d2f00977608557ec6aa3145f850665?rik=Ml5er7PMg2LNfg&pid=ImgRaw&r=0">
+                        <p><b>University:</b></p> 
+                        <p>King Mongkut's University of Technology Thonburi</p>
+                    </div>
+                </div>
+                <span>Background Education</span>
+        </div>
+    </div>
+        
+    <h3 id= "Skill" class="bullet-head"><i class="fa-solid fa-code"></i>Skill</h3>
+    <div class="Skill-data">
+        <div class="bullet-content2">
+            <p>Programming Skill</p>
+            <div class="bullet-content">
+                <div class="content">
+                    <img src="https://th.bing.com/th/id/OIP.AQ5rAzGvicbIAudCjnmlyQHaHa?pid=ImgDet&rs=1">
+                    <img src="https://th.bing.com/th/id/R.76927431573bd65f2639c44eb0087fe6?rik=FplOPefMjeO5kg&pid=ImgRaw&r=0">
+                    <img src="https://th.bing.com/th/id/OIP.ayAY9cZTL2wpgG7wb_sVjQHaEM?pid=ImgDet&rs=1">
+                    <img src="https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png">
+                    <img src="https://th.bing.com/th/id/R.bbf41ae0ba646275d09668883f890c9f?rik=rUd23kr4hUJcIw&pid=ImgRaw&r=0">
+                    <img src="https://2.bp.blogspot.com/-9UsEf71Qy2s/V5So5G-0nWI/AAAAAAAAQhI/yBmG161qeTcO9YJMqxSqmQhdjvrZNKguQCEw/s1600/logo-lua.png">
+                </div>
+            </div>
+            <p>Other Skill</p>
+            <div class="bullet-content">
+                <div class="content">
+                    <img src="https://th.bing.com/th/id/OIP.F3YT_hixov151IGlVl-ZXwHaHY?pid=ImgDet&rs=1">
+                    <img src="https://th.bing.com/th/id/OIP.-QIS8wt_LoiJbtLC2m9sSAHaHc?pid=ImgDet&w=605&h=608&rs=1">
+                    <img src="https://th.bing.com/th/id/R.a1039aaf38655888dcda4efd4ddaca30?rik=jGLfE67J1MPZaQ&pid=ImgRaw&r=0">
+                    <img src="https://th.bing.com/th/id/R.0e4ed77d950cdaaacc2df0842317e4e1?rik=hWZZFkk730NCFA&pid=ImgRaw&r=0">
+                    <img src="https://th.bing.com/th/id/R.64ba6d1187827aa3ff3577c9ef9419fc?rik=Qe5dBlKsxi0L7w&riu=http%3a%2f%2fephtracy.github.io%2ffavicon.png&ehk=9i%2bZSZaOQb08h6hVsd%2fQN95uwIa77PeZ%2bN6xJJEgMEY%3d&risl=&pid=ImgRaw&r=0">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Landing-bg3" id="Contact">
+        <div class="bullet-content">
+            <iframe style="border-radius:12px; margin-right: 70px" src="https://open.spotify.com/embed/track/6m3iQU0F4tke3MBpOIWeJW?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <ol class="bullet-content">
+                <il id="icon"><a href="https://github.com/PunMung-66" target="_blank"><i class="fa-brands fa-github-alt" id="contacti"><il id = "text">github</il></i></a></il>
+                <il id="icon"><a href="https://www.instagram.com/pun_o_o/" target="_blank"><i class="fa-brands fa-instagram" id="contacti"><il id = "text">Instagram</il></i></a></il>
+                <il id="icon"><a href="https://www.facebook.com/profile.php?id=100014665182422" target="_blank">  <i class="fa-brands fa-facebook" id="contacti"><il id = "text">Facebook</il></i></a></il>
+                <il id="icon"><a href="#"><i class="fa-brands fa-discord"><il id = "text">Discord</il></i></a></il>
+            </ol>
+        </div>
+    </div>
+    
+    </div>
+    <div class="Landing-bg4">
+
+    </div>
+</body>
+</html>
